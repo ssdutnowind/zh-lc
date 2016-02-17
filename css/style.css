@@ -2,6 +2,22 @@ body {
     font-family: "microsoft yahei", "微软雅黑", "SimSun", "宋体";
 }
 
+/* Sticky Footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* hide object */
+object {
+    display: none;
+}
+
 .icon-block {
     padding: 0 15px;
 }
@@ -59,4 +75,16 @@ nav .brand-logo img {
 /* icon prefix focus color */
 .input-field .prefix.active {
     color: #0277bd;
+}
+
+.margin-top-bottom {
+    margin: 5px 0;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.job-desc ul,.job-desc ol,.job-desc li{
+    margin: 5px 0;
 }

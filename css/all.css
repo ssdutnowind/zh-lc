@@ -1,0 +1,5 @@
+@import "index.css";  /*首页样式*/
+@import "solution.css";  /*解决方案样式*/
+@import "classic-case.css";  /*经典案例样式*/
+@import "labor-dispatch.css";  /*劳务派遣样式*/
+@import "join-us.css";  /*加入我们样式*/

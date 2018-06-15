@@ -1,0 +1,75 @@
+/*经典案例*/
+.classic-case-wrap {
+    padding: 0 42px 198px;
+}
+.classic-case-nav {
+    margin-top: 52px;
+    margin-bottom: 38px;
+    margin-left: 28px;
+}
+.classic-case-nav .btn{
+    width: 118px;
+    font-size: 16px;
+    line-height: 34px;
+    padding: 0;
+    color: #666;
+    border: 1px solid #f2f2f2;
+    margin-right: 72px;
+    border-radius: 4px;
+}
+.classic-case-nav .btn.active{
+    background-color: #3e9ef5;
+    color: #f5f9fe;
+}
+/*每个案例*/
+.classic-case-list img{
+    width: 520px;
+    height: 314px;
+}
+.classic-case-info{
+    display: table;
+    height: 314px;
+    padding-right: 45px;
+}
+/*让段落垂直居中*/
+.classic-case-message {
+    display: table-cell;
+    vertical-align: middle;
+}
+.classic-case-message h4{
+    color: #232323;
+    line-height: 86px;
+}
+.classic-case-message p{
+    line-height: 22px;
+    color: #666666;
+}
+.divider {
+    margin: 52px 0;
+    height: 1px;
+    background-color: #eee;
+}
+@media (max-width: 768px){
+    .classic-case-wrap {
+        padding: 0 5px 18px;
+    }
+    .classic-case-info{
+        height:auto;
+        padding-right: 15px;
+    }
+    .divider {
+        margin: 22px 0;
+    }
+    .classic-case-message h4{
+        line-height: 2;
+    }
+    .classic-case-nav {
+        margin-left: 0;
+    }
+    .classic-case-nav .btn{
+        width: 80px;
+        font-size: 14px;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+}

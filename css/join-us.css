@@ -1,0 +1,78 @@
+/* 公司联系方式*/
+.contact {
+    padding-top: 80px;
+    padding-bottom: 66px;
+    margin: 0;
+}
+@media all and (max-width: 600px){
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+}
+.contact img{
+    max-width: 100%;
+    height: auto;
+}
+.contact-content{
+    border:2px solid #eee;
+}
+.contact-way h4{
+    margin-top: 24px;
+    line-height: 70px;
+    font-weight: 600;
+}
+.contact-way p {
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.contact > div{
+    border: 2px solid #eee;
+}
+.contact .col-md-6:nth-of-type(1){
+    padding-left: 0;
+}
+@media (max-width: 992px){
+    .contact > div{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .contact .col-md-6:nth-of-type(1){
+        padding-left: 15px;
+    }
+}
+/*招聘信息*/
+.recruitment-info {
+    margin-bottom: 37px;
+    padding-bottom: 32px;
+    padding-left: 46px;
+    background-color: #f4faff;
+}
+@media all and (max-width: 600px){
+    .recruitment-info {
+        padding-left: 30px;
+    }
+}
+.recruitment-info h4{
+    padding-top: 36px;
+    font-weight: 600;
+    margin:0 ;
+    line-height:1;
+}
+.p-r-14 {
+    padding-right: 14px;
+}
+.recruitment-info p{
+    line-height: 36px;
+}
+.recruitment-info h5{
+    font-size: 16px;
+    line-height: 26px;
+}
+.recruitment-info ul{
+    padding-left: 0;
+}
+.recruitment-info li{
+    line-height:28px;
+}

@@ -1,0 +1,116 @@
+/*劳务派遣和关于我们*/
+.labor-dispatch-title {
+    margin: 45px auto 17px;
+    max-width: 328px ;
+}
+.labor-dispatch-title img{
+    max-width: 100%;
+    height:auto;
+}
+.labor-dispatch-wrap{
+    padding: 0 38px 110px;
+}
+.labor-dispatch-content,.about-us-content {
+    padding-top: 13px;
+}
+.labor-dispatch-content img{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0 30px;
+}
+.about-us-company {
+    padding-top: 12px;
+}
+.about-us-content .about-us-company img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+.labor-dispatch-wrap h4{
+    font-size: 16px;
+    line-height: 18px;
+}
+.about-us-content h4{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold;
+}
+.labor-dispatch-wrap p{
+    text-indent: 2em;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.about-us-content p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-us-content .provide-text {
+    font-size: 16px;
+    line-height: 28px;
+}
+.about-us-img {
+    padding-top: 15px;
+}
+.about-us-img img {
+    max-width: 100%;
+    height: auto;
+}
+.about-us-img .about-us-left {
+    padding-right: 10px;
+}
+.about-us-img .about-us-right {
+    padding-left: 0;
+}
+.about-us-img .about-us-right img:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+@media (max-width: 1200px){
+    .about-us-img .about-us-left{
+        padding-left: 0;
+    }
+    .about-us-img .about-us-left ,.about-us-img .about-us-right {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .about-us-img .about-us-right img:nth-of-type(1) {
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+}
+@media all and (max-width: 767px){
+
+    .about-us-img .about-us-right img:nth-of-type(1) {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+}
+ul,li{
+    list-style: none;
+}
+.labor-dispatch-wrap li,.labor-dispatch-wrap ul{
+    padding-left: 0;
+}
+.labor-dispatch-wrap li{
+    line-height: 24px;
+    text-indent: 1em;
+}
+.yellow-dots {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffc231;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+.labor-dispatch-wrap p.flow-text {
+    text-indent: 0;
+}
+.join-us-link {
+    display: inline-block;
+    padding-top: 5px;
+    line-height: 58px;
+    color: #458bff;
+}

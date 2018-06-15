@@ -1,0 +1,33 @@
+/*解决方案*/
+/*banner图*/
+.details-banner img{
+    max-width:100%;
+    height: auto;
+}
+/*解决方案列表*/
+.solution-list .container{
+    padding: 6% 3%;
+}
+@media all and (max-width: 600px){
+    .solution-list .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+.solution-list img{
+    max-width: 100%;
+    height: auto;
+}
+.solution-list-title {
+    padding-top: 6%;
+    font-size: 32px;
+    line-height: 3;
+    color: #666;
+}
+.solution-list-text {
+    line-height: 22px;
+    color: #666;
+}
+.solution-list:nth-of-type(even){
+    background-color: #f7f8fa;
+}

@@ -1,306 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>众汇联创</title>
-
-    <!-- CSS  -->
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <meta charset="UTF-8">
+    <title>辽宁众汇联创科技有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
 </head>
-<body>
-<!-- 众汇联创 -->
-<nav class="light-blue darken-3" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo">
-            <img src="image/logo-t-o-64.png">
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="cases.html">成功案例</a></li>
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="join.html">加入我们</a></li>
-        </ul>
+<body data-active="navIndex">
+    <div class="background">
+        <div class="page-body">
+            <!--最最顶部条-->
+            <template id="top.tpl"></template>
+            <!--公司图标小屏幕时显示-->
+            <div class="hidden-lg hidden-md hidden-sm company-logo">
+                <a href="index.html"><img src="img/logo.png"></a>
+            </div>
+            <!--顶部导航-->
+            <template id="header.tpl"></template>
 
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="cases.html">成功案例</a></li>
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="join.html">加入我们</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-navicon"></i></a>
+            <!-- 广告轮播 -->
+            <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#ad-carousel" data-slide-to="1"></li>
+                    <li data-target="#ad-carousel" data-slide-to="2"></li>
+                    <li data-target="#ad-carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/banner.png" alt="1 slide">
+                        <div class="container hidden-xs">
+                            <div class="carousel-caption">
+                                <p><a class="btn btn-lg" href="#"
+                                      role="button" >了解更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner.png" alt="2 slide">
+                        <div class="container hidden-xs">
+                            <div class="carousel-caption">
+                                <p><a class="btn btn-lg" href="#"
+                                      role="button">了解更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner.png" alt="3 slide">
+                        <div class="container hidden-xs">
+                            <div class="carousel-caption">
+                                <p><a class="btn btn-lg" href="#"
+                                      role="button">了解更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/banner.png" alt="4 slide">
+                        <div class="container hidden-xs">
+                            <div class="carousel-caption">
+                                <p><a class="btn btn-lg" href="#"
+                                      role="button">了解更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 我们的服务 -->
+            <div class="our-service type-one">
+                <div class="text-center">
+                    <h2>我们的服务</h2>
+                    <h3>Our Service</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="thumbnail thumbnail-six text-center">
+                                <div class="thumbnail-img"></div>
+                                <div class="caption text-center">
+                                    <h3>整体解决方案</h3>
+                                    <p>针对不同类型客户，我们拥有丰富的解决方案经验</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="thumbnail thumbnail-one text-center">
+                                <div class="thumbnail-img"></div>
+                                <div class="caption">
+                                    <h3>APP开发</h3>
+                                    <p>针对移动端APP，提供一站式咨询、开发服务</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="thumbnail thumbnail-two text-center">
+                                <div class="thumbnail-img"></div>
+                                <div class="caption text-center">
+                                    <h3>网站制定</h3>
+                                    <p>针对高端定制需求客户，提供全方位网站开发服务</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="thumbnail thumbnail-three text-center">
+                                <div class="thumbnail-img"></div>
+                                <div class="caption text-center">
+                                    <h3>微信开发</h3>
+                                    <p>针对企业需求，提供微信公众平台/小程序开发服务</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="thumbnail thumbnail-four text-center">
+                                <div class="thumbnail-img"></div>
+                                <div class="caption text-center">
+                                    <h3>运营支持</h3>
+                                    <p>为中小型商家及企业，提供IT运营支持服务</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="thumbnail thumbnail-five text-center">
+                                <div class="thumbnail-img"></div>
+                                <div class="caption text-center">
+                                    <h3>劳务派遣</h3>
+                                    <p>公司拥有经验丰富、不同技术方向的人才储备</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 解决方案 -->
+            <div class="solution type-two">
+                <div class="text-center">
+                    <a href="solution.html" class="index-link">
+                        <h2>解决方案</h2>
+                        <h3>Solution</h3>
+                    </a>
+                </div>
+                <div class="container clearfix">
+                    <div class="solution-item">
+                        <img src="img/solution-one.png">
+                        <div class="solution-mask">
+                            <div class="solution-mask-one">
+                                <div class="solution-mask-bg"></div>
+                                <p>出版行业解决方案</p>
+                                <p class="solution-mask-introduce">公司深耕出版行业数字化转型咨询服务多年，提供包括在线阅读、协同编纂、出版流程管理等解决方案。</p>
+                            </div>
+                        </div>
+                        <div class="solution-mask-blue"></div>
+                    </div>
+                    <div class="solution-item">
+                        <img src="img/solution-three.png">
+                        <div class="solution-mask">
+                            <div class="solution-mask-three">
+                                <div class="solution-mask-bg"></div>
+                                <p>电商类解决方案</p>
+                                <p class="solution-mask-introduce">成熟的电商解决方案，为B2C客户提供门户网站、微信端的完整解决方案。</p>
+                            </div>
+                        </div>
+                        <div class="solution-mask-blue"></div>
+                    </div>
+                    <div class="solution-item">
+                        <img src="img/solution-two.png">
+                        <div class="solution-mask">
+                            <div class="solution-mask-two">
+                                <div class="solution-mask-bg"></div>
+                                <p>互联网解决方案</p>
+                                <p class="solution-mask-introduce">各行业互联网+ 服务转型支持，</p>
+                            </div>
+                        </div>
+                        <div class="solution-mask-blue"></div>
+                    </div>
+                    <div class="solution-item">
+                        <img src="img/solution-four.png">
+                        <div class="solution-mask">
+                            <div class="solution-mask-four">
+                                <div class="solution-mask-bg"></div>
+                                <p>其它解决方案</p>
+                                <p class="solution-mask-introduce">针对PC及移动端公司内部系统</p>
+                            </div>
+                        </div>
+                        <div class="solution-mask-blue"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 经典方案 -->
+            <div class="classic-solution type-one">
+                <div class="text-center">
+                    <a href="classic-case.html" class="index-link">
+                        <h2>经典方案</h2>
+                        <h3>Classic case</h3>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <div class="classic-case">
+                        <div class="active" data-type="all">全部</div>
+                        <div data-type="app">app开发</div>
+                        <div data-type="web">网站开发</div>
+                        <div data-type="weXin">微信公众平台开发</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" data-type="web">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">出版社网站</div>
+                                    <p>Publisher's website</p>
+                                </div>
+                                <img src="img/classic-one.png" alt="出版社网站">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="web">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">支付商城</div>
+                                    <p>Payment business city</p>
+                                </div>
+                                <img src="img/classic-two.png" alt="支付商城">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="web">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">出版管理系统</div>
+                                    <p>Publishing management system</p>
+                                </div>
+                                <img src="img/classic-three.png" alt="出版管理系统">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="web">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">响应式网站</div>
+                                    <p>Response web site</p>
+                                </div>
+                                <img src="img/classic-one.png" alt="响应式网站">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="app">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">图库APP</div>
+                                    <p>Picture library app</p>
+                                </div>
+                                <img src="img/classic-six.png" alt="图库APP">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="app">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">智慧牛场app</div>
+                                    <p>Intelligent cattle field app</p>
+                                </div>
+                                <img src="img/classic-five.png" alt="智慧牛场app">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="web">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">出版管理系统</div>
+                                    <p>Publishing management system</p>
+                                </div>
+                                <img src="img/classic-three.png" alt="出版管理系统">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-type="web">
+                            <div class="thumbnail">
+                                <div class="caption classic-item">
+                                    <div class="h3">响应式网站</div>
+                                    <p>Response web site</p>
+                                </div>
+                                <img src="img/classic-one.png" alt="响应式网站">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 我们的优势 -->
+            <div class="our-advantages type-two">
+                <div class="text-center">
+                    <h2>我们的优势</h2>
+                    <h3>Our advantages</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="img/our-advantages-one.png" class="media-object" alt="" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">丰富的开发经验</h4>
+                                    曾经是东软团队，十余年设计，开发经验的沉淀，保证技术过硬。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="img/our-advantages-two.png" class="media-object" alt="" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">优秀的开发团队</h4>
+                                    由高学历、高素质人才组成团队， 形成了科学的管理体系。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="img/our-advantages-three.png" class="media-object" alt="" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">万千参考案例</h4>
+                                    360行行业众多案例供您参考任您选择。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="img/our-advantages-four.png" class="media-object" alt="" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">系统安全稳定</h4>
+                                    平台运行于阿里云计算中心多备份容灾保障,安全稳定。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="img/our-advantages-five.png" class="media-object" alt="" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">售后维护</h4>
+                                    终身免费售后，让您安心的把项目 交托给我们,免除“后顾之忧”。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="img/our-advantages-six.png" class="media-object" alt="" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">知名企业所信赖</h4>
+                                    专业产品经理提供“量身”定制完全满足您的要求。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新闻资讯 -->
+            <div class="news-information type-one">
+                <div class="text-center">
+                    <h2>新闻资讯</h2>
+                    <h3>Cooperative partner</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="news-information-img">
+                                    <img src="img/news-information-one.png" alt="新闻资讯01">
+                                    <div class="text-mask">
+                                        <div class="text-mask-num">01</div>
+                                        <div class="text-mask-time">June,2018</div>
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    <h4>如何选择APP开发公司</h4>
+                                    <p>选择哪家APP开发公司，可以从以下几点做评估：以往的案例数量及难度系数，优秀案例较多可以体现开发公司实力...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="news-information-img">
+                                    <img src="img/news-information-two.png" alt="新闻资讯02">
+                                    <div class="text-mask">
+                                        <div class="text-mask-num">02</div>
+                                        <div class="text-mask-time">June,2018</div>
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    <h4>如何选择APP开发公司</h4>
+                                    <p>选择哪家APP开发公司，可以从以下几点做评估：以往的案例数量及难度系数，优秀案例较多可以体现开发公司实力...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="news-information-img">
+                                    <img src="img/news-information-three.png" alt="新闻资讯03">
+                                    <div class="text-mask">
+                                        <div class="text-mask-num">03</div>
+                                        <div class="text-mask-time">June,2018</div>
+                                    </div>
+                                </div>
+                                <div class="caption">
+                                    <h4>如何选择APP开发公司</h4>
+                                    <p>选择哪家APP开发公司，可以从以下几点做评估：以往的案例数量及难度系数，优秀案例较多可以体现开发公司实力...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关于我们 -->
+            <div class="about-us type-two">
+                <div class="text-center">
+                    <a href="about-us.html" class="index-link">
+                        <h2>关于我们</h2>
+                        <h3>About us</h3>
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left hidden-sm hidden-xs">
+                                    <a href="#">
+                                        <img src="img/about-us.png" class="media-object" alt="公司图片" />
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p>辽宁众汇联创科技有限公司(简称众汇联创)是辽宁沈阳一家专业从事软件开发、软件定制、软件实施的高新技术企业。拥有一批长期专业从事软件开发、软件定制的专业人才，具有雄厚的技术开发实力，全方位满足互联网信息化需求。</p>
+                                    <p>公司非常重视企业的内部管理工作，市场销售、软件研发、技术支持是公司的三大核心部门，现已经建立了一套比较完善的管理体制。</p>
+                                    <p>拥有团队技术能力包括：Java、Android、IOS、Html5、C++、各种常用数据库以及UI/UE等开发能力。</p>
+                                    <p>众汇联创经过多年的经验积累，总结出了针对各行业、不同规模和不同阶段的企业信息化解决方案，我们的项目实施团队能够更加准确快捷地找出客户的具体需求，为您的企业度身定做真正切合实际需求的解决方案。我们实施方面多年的实践积累将为您的企业带来最大投资回报。众汇联创提供符合软件整个开发生命周期的过程服务。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 网站尾部 -->
+        <template id="footer.tpl"></template>
     </div>
-</nav>
-<div class="parallax-container">
-    <div class="parallax"><img src="image/banner.jpg"></div>
-    <div class="container">
-        <br><br><br><br><br><br><br><br>
-
-        <h1 class="header center white-text">汇聚众人智慧，联手创造未来</h1>
-
-        <div class="row center">
-            <h5 class="header col s12 white-text">汇众联创，助您在信息经济时代不断腾飞！</h5>
-        </div>
-        <div class="row center">
-            <a href="about.html" class="btn waves-effect waves-light red darken-1">了解更多</a>
-        </div>
-        <br><br>
-
-    </div>
-</div>
-
-<!-- 案例 -->
-<div class="section no-pad-bot">
-    <div class="container">
-        <h1 class="header center light-blue-text text-darken-3">成功案例</h1>
-
-        <div class="row center">
-            <h5 class="header col s12 light">
-                辽宁众汇联创科技有限公司(简称众汇联创)是专业从事软件管理咨询、商业应用软件研发、互联网+产品咨询研发的专业软件服务公司，具有丰富的行业内项目开发经验。</h5>
-        </div>
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="image/card1.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">平台系统<i
-                                class="material-icons right fa fa-ellipsis-v light-blue-text text-darken-3"></i></span>
-
-                        <p><a href="cases.html" class="light-blue-text text-darken-3">了解更多……</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title light-blue-text text-darken-3">
-                            平台系统
-                            <i class="material-icons right fa fa-close light-blue-text text-darken-3"></i>
-                        </span>
-
-                        <p class="grey-text text-darken-4">众汇联创具有强大的平台开发能力，曾承接过各类系统平台项目的开发。</p>
-
-                        <p class="grey-text text-darken-4">更多信息……</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="image/card2.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">手机客户端<i
-                                class="material-icons right fa fa-ellipsis-v light-blue-text text-darken-3"></i></span>
-
-                        <p><a href="cases.html" class="light-blue-text text-darken-3">了解更多……</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title light-blue-text text-darken-3">
-                            手机客户端
-                            <i class="material-icons right fa fa-close light-blue-text text-darken-3"></i>
-                        </span>
-
-                        <p class="grey-text text-darken-4">我们公司具有大量经验丰富的Android、iOS、WindowPhone开发人员，……</p>
-
-                        <p class="grey-text text-darken-4">更多信息……</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="image/card3.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">软硬件结合的解决方案<i
-                                class="material-icons right fa fa-ellipsis-v light-blue-text text-darken-3"></i></span>
-
-                        <p><a href="cases.html" class="light-blue-text text-darken-3">了解更多……</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title light-blue-text text-darken-3">
-                            软硬件结合的解决方案
-                            <i class="material-icons right fa fa-close light-blue-text text-darken-3"></i>
-                        </span>
-
-                        <p class="grey-text text-darken-4">除了软件解决方案外，我们公司还具有承接各类软硬件结合解决方案能的理解，如室内无线定位设备与系统等。</p>
-
-                        <p class="grey-text text-darken-4">更多信息……</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row center">
-            <a href="cases.html" class="btn waves-effect waves-light light-blue darken-3">了解更多</a>
-        </div>
-        <br><br>
-    </div>
-</div>
-
-<div class="section no-pad-bot light-blue darken-3">
-    <div class="container">
-        <br><br>
-
-        <h1 class="header center white-text">我们的优势</h1>
-
-        <div class="row center">
-            <h5 class="header col s12 white-text">公司持续稳健的发展，使得众汇联创能够不间断的发展我们的独特优势，并在行业内持续的权威性、强大的咨询实施能力和旺盛的创新研发能力。</h5>
-        </div>
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center white-text"><i class="fa fa-thumbs-up"></i></h2>
-                    <h5 class="center white-text">丰富的开发经验</h5>
-
-                    <p class="light-blue-text text-lighten-4">我们具有丰富的本土智慧和经验，强大的实施能力，提供符合软件整个开发生命周期的过程服务。</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center white-text"><i class="fa fa-comment"></i></h2>
-                    <h5 class="center white-text">完善的咨询服务</h5>
-
-                    <p class="light-blue-text text-lighten-4">
-                        项目咨询由研发管理专家、人力资源专家、知名大学教授和行业资深高管共同组成，同时我们不断吸引人才，壮大咨询团队。</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center white-text"><i class="fa fa-group"></i></h2>
-                    <h5 class="center white-text">强大的开发团队</h5>
-
-                    <p class="light-blue-text text-lighten-4">
-                        研发团队具有旺盛的研发能力，专业、热情并极富创造力。大量人才储备和人才合作，和省内多所高校进行合作，为后续专业人才的培养和发展不断的提供新鲜血液。</p>
-                </div>
-            </div>
-        </div>
-        <br><br>
-    </div>
-</div>
-
-<div class="section no-pad-bot">
-    <div class="container">
-        <br><br>
-
-        <h1 class="header center light-blue-text text-darken-3">联系我们</h1>
-
-        <div class="row center">
-            <h5 class="header col s12 light">您可通过微博、微信关注我们，或者直接通过网站给我们留言咨询。</h5>
-        </div>
-        <div class="row center">
-            <a class="waves-effect waves-light btn-large red"><i class="fa fa-weibo left"></i>微博</a>&nbsp;&nbsp;&nbsp;
-            <a class="waves-effect waves-light btn-large green"><i class="fa fa-wechat left"></i>微信</a>&nbsp;&nbsp;&nbsp;
-            <a class="waves-effect waves-light btn-large blue modal-trigger" href="#modalContactUs"><i class="fa fa-comment left"></i>留言</a>
-        </div>
-
-        <br><br>
-    </div>
-</div>
-
-<!-- 联系我们按钮-->
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large light-blue darken-4">
-        <i class="fa fa-pencil"></i>
-    </a>
-    <ul>
-        <li><a class="btn-floating red"><i class="fa fa-weibo"></i></a></li>
-        <li><a class="btn-floating green"><i class="fa fa-wechat"></i></a></li>
-        <li><a class="btn-floating blue modal-trigger" href="#modalContactUs"><i class="fa fa-comment"></i></a></li>
-    </ul>
-</div>
-
-<!-- 联系我们 -->
-<div id="modalContactUs" class="modal modal-fixed-footer">
-    <div class="modal-content">
-        <h4>联系我们</h4>
-
-        <div class="row">
-            <div class="col s12 m12">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="prefix fa fa-user"></i>
-                        <input id="userName" type="text" class="validate">
-                        <label for="userName">姓名</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="prefix fa fa-envelope"></i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="prefix fa fa-phone"></i>
-                        <input id="mobile" type="text" class="validate">
-                        <label for="mobile">联系电话</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="prefix fa fa-commenting"></i>
-                        <textarea id="comment" class="materialize-textarea"></textarea>
-                        <label for="comment">您的意见</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <button class="modal-action modal-close waves-effect waves-light btn-flat">取消</button>
-        &nbsp;
-        <button class="modal-action modal-close waves-effect waves-light btn-flat">发送</button>
-    </div>
-</div>
-
-<footer class="page-footer light-blue darken-3">
-    <div class="container">
-        <div class="row">
-            <div class="col l5 s12">
-                <h5 class="white-text">汇众联创</h5>
-
-                <p class="grey-text text-lighten-4">
-                    辽宁众汇联创科技有限公司(简称众汇联创)是辽宁沈阳一家专业从事软件开发、软件定制、软件实施的高新技术企业。拥有一批长期专业从事软件开发、软件定制的专业人才，具有雄厚的技术开发实力，全方位满足互联网信息化需求。
-                </p>
-
-
-            </div>
-            <div class="col l4 s12">
-                <h5 class="white-text">联系方式</h5>
-                <ul>
-                    <li class="white-text">Email：<a class="white-text" href="mailto:zh-lc@zh-lc.com">zh-lc@zh-lc.com</a>
-                    </li>
-                    <li class="white-text">地址：<span class="white-text">辽宁省沈阳市和平区五里河城C座</span></li>
-                    <li class="white-text">邮编：<span class="white-text">110000</span></li>
-                    <li class="white-text">电话：<span class="white-text">024-00000000</span></li>
-                    <li class="white-text">传真：<span class="white-text">024-00000000</span></li>
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">常用链接</h5>
-                <ul>
-                    <li class="white-text"><a class="white-text" href="about.html">关于我们</a></li>
-                    <li class="white-text"><a class="white-text" href="join.html">加入我们</a></li>
-                    <li class="white-text"><a class="white-text" href="#">使用条款</a></li>
-                    <li class="white-text"><a class="white-text" href="#">隐私条约</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            Copyright © 2016 汇众联创&nbsp;&nbsp;辽ICP备00000000号
-        </div>
-    </div>
-</footer>
-
-
-<!--  Scripts-->
-<script src="js/jquery.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

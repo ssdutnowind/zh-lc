@@ -12,7 +12,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                    <h5 class="page-footer-title">联系我们</h5>
+                    <h5 class="page-footer-title">网站导航</h5>
                     <i class="page-footer-line"></i>
                     <ul class="foot-list-group">
                         <li><a href="solution.html" >解决方案</a></li>

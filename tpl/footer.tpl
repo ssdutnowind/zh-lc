@@ -8,7 +8,7 @@
                     <ul class="foot-list-group">
                         <li>电话：024-31683896</li>
                         <li>邮箱：yunying@zh-lc.com</li>
-                        <li>地址：辽宁省沈阳市浑南新区世纪路5号同方世纪大厦A座2710室</li>
+                        <li>地址：辽宁省沈阳市浑南新区世纪路5号同方世纪大厦A座2709室</li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <p class="col-sm-12 foot-copy text-center">
-                    Copyright©2016-2018&nbsp;&nbsp;辽宁众汇联创科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;辽ICP备 16002458号-1
+                    Copyright©2016-2018 辽宁众汇联创科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;辽ICP备 16002458号-1
                 </p>
             </div>
         </div>

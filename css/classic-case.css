@@ -39,6 +39,7 @@
 .classic-case-message h4{
     color: #232323;
     line-height: 86px;
+    font-weight: bold;
 }
 .classic-case-message p{
     line-height: 22px;
